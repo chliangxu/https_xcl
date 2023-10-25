@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views import View
 """
  django.http模块中定义了HttpResponse 对象的API
  作用：不需要调用模板直接返回数据
