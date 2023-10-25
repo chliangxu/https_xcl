@@ -17,3 +17,7 @@
 # models:数据模块，用于设计数据库等
 # tests:编写测试脚本
 # views：视图层，直接和浏览器进行交互
+
+import pymysql
+
+pymysql.install_as_MySQLdb()
