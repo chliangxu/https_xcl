@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from app_demo import views
+from app01 import views
 
 
 # 在urlpatterns中加入path(‘hello/’, views.hello)，第一个元素是匹配的字符串，第二个元素为相对应的视图模块。
