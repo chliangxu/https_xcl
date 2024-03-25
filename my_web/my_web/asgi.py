@@ -1,5 +1,5 @@
 """
-ASGI config for http_xcl project.
+ASGI config for my_web project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
