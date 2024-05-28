@@ -99,7 +99,10 @@ fiels = {"id": "INT(10) UNSIGNED AUTO_INCREMENT",
          "borrow_out_people":"varchar(250) NOT NULL",
          "remark":"varchar(250) NOT NULL",
          }
-
-cnn = DatabaseOperation(ip="127.0.0.1", pwd="123456789", user="root", database="computer_info")
+# fiels = {
+#         "id": "INT(10) UNSIGNED AUTO_INCREMENT",
+#          "phone": "varchar(250) NOT NULL",
+# }
+cnn = DatabaseOperation(ip="43.138.135.38", pwd="123456789", user="root", database="web")
 # cnn.truncate("computer_infos")
-cnn.creat_table("computer_infos", fiels)
+cnn.creat_table("phone_info", fiels)

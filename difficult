@@ -1,0 +1,7 @@
+1.Django中的数据库为什么要迁移?
+
+2.Django4.2.7与python版本3.8运行时出现了下列错误
+ValueError: too many values to unpack (expected 3)
+已解决:url出现了错误,多写了()
+错误写法:path("computer_info/", views.select_machine())
+正确写法:path("computer_info/", views.select_machine)

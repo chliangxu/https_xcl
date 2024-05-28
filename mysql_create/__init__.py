@@ -1,3 +1,5 @@
+# Mysql安装，以及可视化工具SQLyog配置，最详细的手把手教学
+# https://blog.csdn.net/qq_58085131/article/details/134172033
 # 一些常用的mysql命令
 # 常见命令
 # show databases; 查看所有数据库

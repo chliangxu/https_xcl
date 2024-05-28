@@ -21,4 +21,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("app01/", include("app01.urls")),
+    # 简易动漫网站的搭建（最终目标）
+    path("comic/", include("comic.urls")),
 ]

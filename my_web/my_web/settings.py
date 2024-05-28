@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "app01",
+    "comic",
 ]
 
 # 中间件，可以暂时先不用管

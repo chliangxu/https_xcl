@@ -14,8 +14,8 @@ class PHONESENDFILE():
 
 # 创建数据表以及导入数据
     def create_info(self):
-        cnn = DatabaseOperation(ip="127.0.0.1", pwd="123456789", user="root", database="computer_info")
-        cnn.truncate("computer_infos")  # 需要清空表从新存储数据，因为机器名字可能会修改，导致与数据库中的名字不一样
+        cnn = DatabaseOperation(ip="43.138.135.38", pwd="123456789", user="root", database="web")
+        cnn.truncate("phone_info")  # 需要清空表从新存储数据，因为机器名字可能会修改，导致与数据库中的名字不一样
         for lis_info in self.xlsx_file():
             phone_info_dict = dict()
             phone_info_dict["phone"] = lis_info[0]
@@ -28,7 +28,7 @@ class PHONESENDFILE():
             phone_info_dict["borrow_out_people"] = lis_info[7]
             phone_info_dict["remark"] = lis_info[-1]
             print(type(phone_info_dict), phone_info_dict)
-            cnn.insert(table_name="computer_infos", need_insert_fiels_and_data=phone_info_dict)
+            cnn.insert(table_name="phone_info", need_insert_fiels_and_data=phone_info_dict)
         cnn.close_db()
         return True
 
