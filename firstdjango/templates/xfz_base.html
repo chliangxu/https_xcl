@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}-不良人</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="/"> 首页 </a></li>
+        <li><a href="/course"> 创业课堂 </a></li>
+    </ul>
+</header>
+{% block body %}
+    我是来自父模板的东东
+{% endblock %}
+</body>
+</html>
